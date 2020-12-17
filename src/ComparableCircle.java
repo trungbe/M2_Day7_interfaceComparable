@@ -1,4 +1,4 @@
-public class ComparableCircle extends Circle implements Comparable<Circle>{
+public class ComparableCircle extends Circle implements Comparable<ComparableCircle>{
 
     public ComparableCircle() {
     }
@@ -12,7 +12,7 @@ public class ComparableCircle extends Circle implements Comparable<Circle>{
     }
 
     @Override
-    public int compareTo(Circle o) {
+    public int compareTo(ComparableCircle o) {
         if (getRadius() > o.getRadius()) return 1;
         else if (getRadius() < o.getRadius()) return -1;
         else return 1;
